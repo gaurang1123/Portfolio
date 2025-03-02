@@ -32,3 +32,19 @@ sr.reveal('.home-text, .about-img, .skills-items, .skills-logo',{});
 sr.reveal('.profile-img, .about-text, .skills__img',{delay: 400}); 
 sr.reveal('.home-links',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact-input',{interval: 200}); 
+
+
+const ham = document.querySelector(".nav-ham");
+const hamclose = document.querySelector(".fa-xmark");
+const nav_ham = document.querySelector(".nav-ham")
+const small_link = document.querySelector(".small-screen-nav-link")
+
+ham.addEventListener("click",()=>{
+    nav_ham.setAttribute("class","nav-ham")
+    small_link.setAttribute("class","small-screen-nav-link nav-active")
+})
+
+hamclose.addEventListener("click",()=>{
+    small_link.setAttribute("class","small-screen-nav-link ")
+    nav_ham.setAttribute("class","nav-ham nav-active")
+})

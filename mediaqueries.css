@@ -1,0 +1,259 @@
+@media (min-width:320px) and (max-width: 480px) {
+/* Styles for small phones */
+
+.nav-links{
+    display: none;
+}
+
+.nav-ham{
+    display: block;
+}
+
+.small-screen-nav-link{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.nav-active{
+    display: block;
+}
+
+.small-screen-nav-link i{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    font-size: 2em;
+}
+
+.small-screen-nav-link ul{
+    padding: 20px 10px ;
+    text-align: center;
+}
+
+
+.small-screen-nav-link ul li a{
+    text-decoration: none;
+    color: var(--first-color);
+}
+
+.home-text{
+    align-items: center;
+}
+.home-items{
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+}
+
+#home{
+min-height: min-content; 
+padding: 50px;
+}
+
+#home .profile-img img{
+    max-width: 230px;
+}
+
+.home-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.home-btn a{
+    padding: 5px 15px;
+}
+
+.home-links{
+    left: unset;
+}
+.run-text{
+    text-align: center;
+}
+.run-text h2{
+    color: var(--second-color);
+    font-size: 1.5rem;
+}
+
+.about-items{
+    flex-direction: column;
+    gap: 20px;
+
+}
+.about-img{
+    max-width: 80%;
+}
+
+.about-text{
+    align-items: center;
+    width: 70%;
+}
+
+.skills-items{
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+.skills-img{
+    max-width: 80%;
+}
+
+.skills-text{
+    width: 70%;
+    gap: 20px;
+}
+
+.contact-input input,.contact-input textarea{
+    width: 80%;
+} 
+
+footer{
+    padding-inline: 10px;
+}
+
+}
+
+@media (min-width: 481px) and (max-width: 644px) {
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-ham{
+        display: block;
+    }
+
+    .home-text{
+        align-items: center;
+    }
+    .home-items{
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    #home{
+    min-height: min-content; 
+    padding: 50px;
+    }
+    
+    #home .profile-img img{
+        max-width: 230px;
+    }
+    
+    .home-btn{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .home-btn a{
+        padding: 5px 15px;
+    }
+    
+    .home-links{
+        left: unset;
+    }
+    .run-text{
+        text-align: center;
+    }
+    .run-text h2{
+        color: var(--second-color);
+        font-size: 2rem;
+    }
+    
+    .about-items{
+        flex-direction: column;
+        gap: 20px;
+    
+    }
+    .about-img{
+        max-width: 80%;
+    }
+    
+    .about-text{
+        align-items: center;
+        width: 70%;
+    }
+    
+    .skills-items{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    
+    .skills-img{
+        max-width: 80%;
+    }
+    
+    .skills-text{
+        width: 70%;
+        gap: 20px;
+    }
+    
+    .contact-input input,.contact-input textarea{
+        width: 80%;
+    } 
+    
+    footer{
+        padding-inline: 10px;
+    }
+}
+
+@media (min-width: 645px) and (max-width: 768px) {
+/* Styles for large phones & tablets */
+
+
+.home-items{
+    flex-direction: column-reverse;
+    gap: 50px;
+}
+
+#home{
+min-height: min-content; 
+padding: 50px;
+}
+.home-links{
+    left: unset;
+}
+
+.skills-items{
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+.skills-text{
+    width: 50%;
+    gap: 20px;
+}
+
+footer{
+    padding-inline: 10px;
+}
+
+}
+
+@media (min-width: 769px) {
+/* Styles for tablets */
+#home .profile-img img{
+    min-width: 300px;
+    max-width: 375px;
+}
+
+.home-links{
+    left: 20px;
+}
+
+.run-text h2{
+    font-size: 2rem;
+}
+
+}
+
+

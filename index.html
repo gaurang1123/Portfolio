@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
         <div class="logo-name">
             <h1>GAURANG</h1>
         </div>
-        <div class="nav-links">
+        <div class="nav-links ">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About-Me</a></li>
@@ -27,7 +28,11 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div style="display: none;" class="small-screen-nav-link">
+        <div class="nav-ham nav-active">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div  class="small-screen-nav-link ">
+            <i class="fa-solid fa-xmark"></i>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About-Me</a></li>
