@@ -52,6 +52,7 @@
 }
 
 #home{
+height: calc(100dvh - 20px);
 min-height: min-content; 
 padding: 50px;
 }
@@ -74,6 +75,7 @@ padding: 50px;
 .home-links{
     left: unset;
 }
+
 .run-text{
     text-align: center;
 }

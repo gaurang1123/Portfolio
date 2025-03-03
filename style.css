@@ -131,6 +131,7 @@ border-bottom:1px solid #eccece ;
     left: 0px;
     bottom: 0px;
     gap: 20px;
+    display: flex;
 }
 
 .home-links a i{
