@@ -42,7 +42,42 @@ document.querySelectorAll('.small-screen-nav-link  a[href^="#"]').forEach(anchor
 
 // HOME TEXT 
 
+const words = ["WEB DEVELOPER", "TECHIEE", "FRONTEND DESIGNER", "QUICK LEARNER" ]
+let home_text = document.querySelector(".run-text-change")
+let index = 0;
+let charIndex = 0;
+let interval;
 
+function typeWord() {
+    if (charIndex < words[index].length) {
+        home_text.innerHTML += words[index][charIndex];
+        charIndex++;
+    } else {
+        clearInterval(interval);
+        setTimeout(eraseWord, 1000); // Pause before deleting
+    }
+}
+function eraseWord() {
+    if (charIndex > 0) {
+        home_text.innerHTML = words[index].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(eraseWord, 100);
+    } else {
+        home_text.style.opacity = "0"; // Keeps the space but makes text invisible
+        index = (index + 1) % words.length;
+        setTimeout(startTyping, 500);
+    }
+}
+
+function startTyping() {
+    home_text.style.opacity = "1"; // Makes text visible again
+    charIndex = 0;
+    interval = setInterval(typeWord, 100);
+}
+    
+
+
+startTyping();
 
 
 /*===== SCROLL REVEAL ANIMATION =====*/

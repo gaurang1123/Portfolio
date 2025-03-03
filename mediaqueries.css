@@ -76,12 +76,10 @@ padding: 50px;
     left: unset;
 }
 
-.run-text{
-    text-align: center;
-}
 .run-text h2{
     color: var(--second-color);
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .about-items{
@@ -164,12 +162,11 @@ footer{
     .home-links{
         left: unset;
     }
-    .run-text{
-        text-align: center;
-    }
+
     .run-text h2{
         color: var(--second-color);
         font-size: 2rem;
+        text-align: center;
     }
     
     .about-items{
@@ -216,6 +213,14 @@ footer{
 .home-items{
     flex-direction: column-reverse;
     gap: 50px;
+}
+.home-text{
+    text-align: center;
+    align-items: normal;
+}
+
+.run-text{
+    text-align: center;
 }
 
 #home{
