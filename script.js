@@ -48,3 +48,13 @@ hamclose.addEventListener("click",()=>{
     small_link.setAttribute("class","small-screen-nav-link ")
     nav_ham.setAttribute("class","nav-ham nav-active")
 })
+
+
+const s_nav_links = small_link.querySelectorAll("a")
+
+for (const link of s_nav_links) {
+    link.addEventListener("click",()=>{
+        small_link.setAttribute("class","small-screen-nav-link ")
+        nav_ham.setAttribute("class","nav-ham nav-active")
+    })
+}
