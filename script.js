@@ -42,7 +42,7 @@ document.querySelectorAll('.small-screen-nav-link  a[href^="#"]').forEach(anchor
 
 // HOME TEXT 
 
-const words = ["WEB DEVELOPER", "TECHIEE", "FRONTEND DESIGNER", "QUICK LEARNER" ]
+const words = ["WEB DEVELOPER", "TECHIEE", "MERN STACK DEV", "QUICK LEARNER" ]
 let home_text = document.querySelector(".run-text-change")
 let index = 0;
 let charIndex = 0;
@@ -74,7 +74,7 @@ function startTyping() {
     charIndex = 0;
     interval = setInterval(typeWord, 100);
 }
-    
+
 
 
 startTyping();
