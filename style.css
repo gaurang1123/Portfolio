@@ -5,6 +5,7 @@
     --second-color: hsl(var(--hue-color), 56%, 12%);
 }
 
+
 *{
     margin: 0;
     padding: 0;
