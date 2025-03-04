@@ -75,8 +75,6 @@ function startTyping() {
     interval = setInterval(typeWord, 100);
 }
 
-
-
 startTyping();
 
 
